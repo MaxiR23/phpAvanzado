@@ -15,11 +15,24 @@ class Electricos{
         $this->tamaño = $tamaño;
     }
 
-    public function showAll(){
-        echo "Nombre: ".$this->nombre."<br>"."Detalle: ".$this->detalle."<br>"."Precio: ".$this->precio."<br>".
-        "Peso: ".$this->peso."<br>"."Tamaño: ".$this->tamaño;
+    //Metodos
+    function setNombre($nombre){ $this->nombre = $nombre; }
+    function getNombre(){ return $this->nombre; }
+
+    function setDetalle($detalle){ $this->detalle = $detalle; }
+    function getDetalle(){ return $this->detalle; }
+
+    function setPrecio($precio){ $this->precio = $precio; }
+    function getPrecio(){ return $this->precio; }
+
+    function setPeso($peso){ $this->peso = $peso; }
+    function getPeso(){ return $this->peso; }
+
+    function setTamaño($tamaño){ $this->tamaño = $tamaño; }
+    function getTamaño(){ return $this->tamaño; }
+
+    function ShowAll(){
+        echo "Nombre: ".$this->getNombre()."<br>"."Detalle: ".$this->getDetalle()."<br>".
+        "Precio: ".$this->getPrecio()."<br>"."Peso: ".$this->getPeso()."<br>"."Tamaño :".$this->getTamaño();
     }
 }
-
-$obj = new Electricos('Samsung', 'El último Samsung del mercado', '$140.000','189g', '159,9 x 75,1 x 8,4 mm');
-$obj->showAll();
