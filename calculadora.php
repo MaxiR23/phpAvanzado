@@ -85,6 +85,6 @@ class Operaciones implements iNumeros{
 }
 
 $obj = new Operaciones();
-$obj->setNumero1(5);
-$obj->setNumero2(0);
-$obj->division();
+$obj->setNumero1(5); //Ingresar número.
+$obj->setNumero2(0); //Ingresar número.
+$obj->division(); // Ingresar una operación.
